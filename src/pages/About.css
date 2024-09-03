@@ -4,6 +4,8 @@
 .about{
     background-color: #000A1F;
     color: #ffffff;
+    width: 100vw;
+    height: auto;
 }
 .about .about-hero{
     width: 100vw;
@@ -61,10 +63,11 @@
 }
 .about .benefits{
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .about .benefits .benefit-header{
     width: 60%;
@@ -105,28 +108,153 @@
 }
 .about .client-first{
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.about .client-first .client-first-container{
+    width: 90vw;
+    height: 80vh;
     display: flex;
     justify-content: space-around;
-    box-sizing: border-box;
+    align-items: center;
 }
-.about .client-first .client-first-content{
+.about .client-first .client-first-container .client-first-content{
     width: 30%;
-    height: auto;
+    height: 60%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #228B22;
 }
-.about .client-first .client-first-content h6, h2, p{
+.about .client-first .client-first-container .client-first-content h6{
     overflow: hidden;
 }
-.about .client-first .client-first-image{
+.about .client-first .client-first-container .client-first-image{
     width: 50%;
-    height: auto;
+    height: 60%;
     background-image: url(https://images.pexels.com/photos/7979447/pexels-photo-7979447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.about .revision-rounds-and-maintenance {
+    width: 100vw;
+    height: 50vh;
+    background-color: #228B22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container .maintenance-image {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container .maintenance-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container .maintenance-content {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container .maintenance-content h6,
+h2,
+p {
+    overflow: hidden;
+}
+.about .support {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .support .support-container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .support .support-container .support-image {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .support .support-container .support-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.about .support .support-container .support-content {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .quick-delivery {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #228B22;
+}
+
+.about .quick-delivery .quick-delivery-container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .quick-delivery .quick-delivery-container .delivery-image {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .quick-delivery .quick-delivery-container .delivery-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.about .quick-delivery .quick-delivery-container .delivery-content {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
