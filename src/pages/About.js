@@ -4,6 +4,7 @@ import "./About.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers, faFile } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer";
+import PdfFile from '../components/PdfFile';
 
 function About() {
   return (
@@ -14,12 +15,13 @@ function About() {
           <h2>About Me</h2>
           <p>
             Hello! I am Drusilla Khulwael Wamalwa, a web developer, UI/UX Designer,
-            a Mobile developer in training and an upcoming software engineer. I am doing
-            my bachelors degree in business Information Technology at St Paul's University. 
-            I am interested in Exploring and staying updated with the latest trends in Technology.
-            I am passionate about creating products that make a difference, which drives me to reach my full potential.
+            a Mobile developer in training and an upcoming software engineer. I am proficient 
+            in HTML, CSS, JS and ReactJs Framework.  I am doing my bachelors degree in Business Information 
+            Technology at St Paul's University. I am interested in Exploring and staying updated with the latest 
+            trends in Technology. I am passionate about creating products that make a difference, which drives me to
+            reach my full potential.
           </p>
-          <button className="about-button">Download my CV</button>
+          <PdfFile/>
         </div>
         <div className='about-hero-image'>
           <img src="https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Drusilla" className='overlay-image'/>
