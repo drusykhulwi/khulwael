@@ -1,31 +1,36 @@
-*{
+* {
     margin: 0;
 }
-.about{
+
+.about {
     background-color: #000A1F;
     color: #ffffff;
     width: 100vw;
     height: auto;
 }
-.about .about-hero{
+
+.about .about-hero {
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.about .about-hero .about-hero-content{
+.about .about-hero .about-hero-content {
     width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.about .about-hero .about-hero-content  h2{
+
+.about .about-hero .about-hero-content h2 {
     overflow: hidden;
 }
-.about .about-hero .about-hero-image{
+
+.about .about-hero .about-hero-image {
     position: relative;
     width: 30vw;
     height: 40vh;
@@ -35,15 +40,17 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-.about .about-hero .about-hero-image .overlay-image{
+
+.about .about-hero .about-hero-image .overlay-image {
     position: absolute;
     top: 95%;
     right: 72%;
     transform: translate(-50%, -50%);
-    width: 70px; 
-    height: 70px; 
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
+
 .about .about-hero .about-hero-image .overlay-image1 {
     position: absolute;
     top: 95%;
@@ -53,21 +60,24 @@
     height: 70px;
     border-radius: 50%;
 }
-.about-button{
+
+.about-button {
     background-color: #228B22;
     border: none;
     color: #ffffff;
-    width: 15vw;
-    height: 8vh;
+    width: 70px;
+    height: 70px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about-button a{
+
+.about-button a {
     color: #ffffff;
 }
-.about .benefits{
+
+.about .benefits {
     width: 100vw;
     height: 70vh;
     display: flex;
@@ -75,20 +85,24 @@
     align-items: center;
     justify-content: center;
 }
-.about .benefits .benefit-header{
+
+.about .benefits .benefit-header {
     width: 60%;
     height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.about .benefits .benefit-contents{
+
+.about .benefits .benefit-contents {
     width: 80%;
     height: 80%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.about .benefits .benefit-contents .benefit-content{
+
+.about .benefits .benefit-contents .benefit-content {
     width: 32%;
     height: 50%;
     background-color: #ffffff;
@@ -97,11 +111,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
-.about .benefits .benefit-contents .benefit-content h5{
+
+.about .benefits .benefit-contents .benefit-content h5 {
     overflow: hidden;
 }
-.about .benefits .benefit-contents .benefit-content p{
+
+.about .benefits .benefit-contents .benefit-content p {
     width: 80%;
     height: auto;
     display: flex;
@@ -109,10 +126,11 @@
     align-items: center;
 }
 
-.about .benefits .benefit-header h2{
+.about .benefits .benefit-header h2 {
     overflow: hidden;
 }
-.about .client-first{
+
+.about .client-first {
     width: 100vw;
     height: 50vh;
     display: flex;
@@ -121,14 +139,17 @@
     box-sizing: border-box;
     overflow: hidden;
 }
-.about .client-first .client-first-container{
+
+.about .client-first .client-first-container {
     width: 90vw;
     height: 80vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
-.about .client-first .client-first-container .client-first-content{
+
+.about .client-first .client-first-container .client-first-content {
     width: 30%;
     height: 60%;
     overflow: hidden;
@@ -136,10 +157,12 @@
     flex-direction: column;
     justify-content: center;
 }
-.about .client-first .client-first-container .client-first-content h6{
+
+.about .client-first .client-first-container .client-first-content h6 {
     overflow: hidden;
 }
-.about .client-first .client-first-container .client-first-image{
+
+.about .client-first .client-first-container .client-first-image {
     width: 50%;
     height: 60%;
     background-image: url(https://images.pexels.com/photos/7979447/pexels-photo-7979447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -163,6 +186,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container .maintenance-image {
@@ -185,11 +209,13 @@
     flex-direction: column;
     justify-content: center;
 }
+
 .about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container .maintenance-content h6,
 h2,
 p {
     overflow: hidden;
 }
+
 .about .support {
     width: 100vw;
     height: 50vh;
@@ -204,6 +230,7 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about .support .support-container .support-image {
@@ -242,6 +269,7 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about .quick-delivery .quick-delivery-container .delivery-image {
@@ -263,4 +291,216 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+
+    .about .about-hero .about-hero-content,
+    .about .client-first .client-first-container .client-first-content,
+    .about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container .maintenance-content,
+    .about .support .support-container .support-content,
+    .about .quick-delivery .quick-delivery-container .delivery-content {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .about .about-hero {
+        flex-direction: column;
+    }
+
+    .about .about-hero .about-hero-content,
+    .about .client-first .client-first-container .client-first-content,
+    .about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container .maintenance-content,
+    .about .support .support-container .support-content,
+    .about .quick-delivery .quick-delivery-container .delivery-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .benefits .benefit-contents .benefit-content {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about .client-first .client-first-container {
+        flex-direction: column;
+    }
+
+    .about .client-first .client-first-container .client-first-content,
+    .about .client-first .client-first-container .client-first-image,
+    .about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container,
+    .about .support .support-container,
+    .about .quick-delivery .quick-delivery-container {
+        width: 100%;
+    }
+
+    .about .client-first .client-first-container .client-first-image,
+    .about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container .maintenance-image,
+    .about .support .support-container .support-image,
+    .about .quick-delivery .quick-delivery-container .delivery-image {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .about .about-hero .about-hero-content h2,
+    .about .client-first .client-first-container .client-first-content h6,
+    .about .revision-rounds-and-maintenance .revision-rounds-and-maintenance-container .maintenance-content h6,
+    .about .support .support-container .support-content h6,
+    .about .quick-delivery .quick-delivery-container .delivery-content h6 {
+        font-size: 1.5rem;
+    }
+
+    .about-button {
+        width: 50vw;
+        height: 6vh;
+    }
+}
+@media (max-width: 1200px) {
+  .about .about-hero .about-hero-content,
+  .about .about-hero .about-hero-image {
+    width: 45%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about .about-hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about .about-hero .about-hero-content,
+  .about .about-hero .about-hero-image {
+    width: 80%;
+    height: auto;
+  }
+
+  .about .about-hero .about-hero-image {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .about .about-hero {
+    height: auto;
+  }
+
+  .about .about-hero .about-hero-content {
+    width: 90%;
+  }
+
+  .about .about-hero .about-hero-image {
+    width: 90%;
+    height: 25vh;
+  }
+
+  .about .about-hero .about-hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-button {
+    width: 50vw;
+    height: 6vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .about-hero .about-hero-content,
+  .about .about-hero .about-hero-image {
+    width: 100%;
+  }
+
+  .about .about-hero .about-hero-image {
+    height: 20vh;
+  }
+
+  .about .about-hero .about-hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-button {
+    width: 70vw;
+    height: 6vh;
+  }
+}
+@media (max-width: 1200px) {
+
+    .about .about-hero .about-hero-content,
+    .about .about-hero .about-hero-image {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .about .about-hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about .about-hero .about-hero-content,
+    .about .about-hero .about-hero-image {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        /* Add margin-bottom for spacing */
+    }
+
+    .about .about-hero .about-hero-image {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .about-hero {
+        height: auto;
+    }
+
+    .about .about-hero .about-hero-content {
+        width: 90%;
+        margin-bottom: 20px;
+        /* Add margin-bottom for spacing */
+    }
+
+    .about .about-hero .about-hero-image {
+        width: 90%;
+        height: 25vh;
+        margin-bottom: 20px;
+        /* Add margin-bottom for spacing */
+    }
+
+    .about .about-hero .about-hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-button {
+        width: 50vw;
+        height: 6vh;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .about .about-hero .about-hero-content,
+    .about .about-hero .about-hero-image {
+        width: 100%;
+        margin-bottom: 20px;
+        /* Add margin-bottom for spacing */
+    }
+
+    .about .about-hero .about-hero-image {
+        height: 20vh;
+    }
+
+    .about .about-hero .about-hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-button {
+        width: 70vw;
+        height: 6vh;
+    }
 }
