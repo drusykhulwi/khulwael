@@ -1,109 +1,167 @@
-*{
+/* General Styles */
+* {
     overflow-x: hidden;
 }
-.services{
+
+.services {
     background-color: #000A1F;
     color: #ffffff;
     width: 100vw;
     height: auto;
 }
-.my-services{
+
+.my-services {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
-.my-services .services-container{
-    width: 80%;
-    height: 100%;
+
+.my-services .services-container {
+    width: 90%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
 }
-.my-services .services-container h1{
+
+.my-services .services-container h1 {
     width: 100%;
-    height: 20%;
     text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
-.my-services .services-container .contents-container{
+
+.my-services .services-container .contents-container {
     width: 100%;
-    height: 80%;
     display: flex;
     flex-direction: column;
 }
-.my-services .services-container .contents-container .contents{
+
+.my-services .services-container .contents-container .contents {
     width: 100%;
-    height: 50%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
-.my-services .services-container .contents-container .contents .content{
+
+.my-services .services-container .contents-container .contents .content {
     width: 30%;
-    height: 100%;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
-.my-services .services-container .contents-container .contents .content .icon1{
-    width: 19%;
-    height: 24%;
+
+.my-services .services-container .contents-container .contents .content .icon1 {
+    width: 80px;
+    /* Adjust as needed */
+    height: 80px;
+    /* Adjust as needed */
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     background-color: #5454D41A;
 }
-h4{
+
+h4 {
     overflow: hidden;
     color: #228B22;
 }
-.FAQs{
+
+.FAQs {
     width: 100vw;
-    height: 40vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
-.FAQs .FAQs-container{
-    width: 82%;
-    height: 80%;
+
+.FAQs .FAQs-container {
+    width: 90%;
+    max-width: 1200px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
-.FAQs .FAQs-container .FAQs-heading{
-    width: 30%;
-    height: 100%;
+
+.FAQs .FAQs-container .FAQs-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
-h3{
+
+h3 {
     overflow: hidden;
 }
-a{
+
+a {
     text-decoration: none;
     color: #228B22;
 }
-.FAQs .FAQs-container .FAQS-content{
-    width: 60%;
-    height: 100%;
-}
-.FAQs .FAQs-container .FAQS-content .item{
+
+.FAQs .FAQs-container .FAQS-content {
     width: 100%;
-    height: auto;
+}
+
+.FAQs .FAQs-container .FAQS-content .item {
+    width: 100%;
     cursor: pointer;
     border-bottom: 1px solid #ffffff;
 }
-.FAQs .FAQs-container .FAQS-content .item .title{
+
+.FAQs .FAQs-container .FAQS-content .item .title {
     display: flex;
     justify-content: space-between;
 }
-.FAQS-content .item .content{
+
+.FAQS-content .item .content {
     color: #228B22;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.5s cubic-bezier(0.1,0.1);
+    transition: all 0.5s cubic-bezier(0.1, 0.1);
 }
-.FAQS-content .item .content.show{
+
+.FAQS-content .item .content.show {
     height: auto;
     max-height: 9999px;
     transition: all 0.5s cubic-bezier(0.1, 0.1);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .my-services .services-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .my-services .services-container .contents-container .contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-services .services-container .contents-container .contents .content {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-services .services-container .contents-container .contents .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .my-services .services-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .FAQs .FAQs-container .FAQs-heading h3 {
+        font-size: 1.2rem;
+    }
 }
