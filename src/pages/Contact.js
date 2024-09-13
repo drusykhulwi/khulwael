@@ -12,13 +12,15 @@ function Contact() {
         message: '',
     })
     const handleChange = (event) => {
-        setValues({...values, [event.target.name]: [event.target.value]})
+        setValues({...values, [event.target.name]: event.target.value})
     }
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:8081/clients', values)
+        axios.post('http://localhost:8081/clients/', values)
         .then(res => console.log("Message sent!"))
-        .catch(err => console.log(err));
+        .catch(err => console.error("Error sending message:", err.response ? err.response.data : err.message));
+
+        
     }
   return (
     <div className='contact'>

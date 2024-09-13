@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from "../logo.PNG";
 import { Link } from 'react-router-dom';
+import "./Navigation.css";
 
 
 function CollapsibleExample() {
@@ -10,7 +11,7 @@ function CollapsibleExample() {
     <Navbar collapseOnSelect expand="lg" className="bg-body-white">
       <Container>
         <Navbar.Brand href="#home"><img  src={logo} alt="logo" style={{ width: 70,  height: 70 }}/></Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
          <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" className="page text-decoration-none text-white">

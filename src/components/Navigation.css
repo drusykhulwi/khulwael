@@ -1,3 +1,22 @@
 *{
     margin: 0;
 }
+/* Add this to your CSS file */
+.navbar-toggler-icon {
+    background-color: #ffffff;
+    /* White background for the toggle icon */
+    border: 1px solid #ffffff;
+    /* Optional: White border around the toggle button */
+    border-radius: 5px;
+}
+
+
+.navbar-toggler-icon::before {
+    background-color: #ffffff;
+    /* White color for the lines in the toggle icon */
+}
+
+.navbar-toggler-icon::after {
+    background-color: #ffffff;
+    /* White color for the lines in the toggle icon */
+}

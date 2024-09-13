@@ -11,6 +11,10 @@ import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
 import Services from "./pages/Services.js";
 import Project from "./pages/Project.js";
+import AllProjects from "./components/AllProjects.js";
+import Websites from "./components/Websites.js";
+import MobileApp from "./components/MobileApp.js";
+import Designs from "./components/Designs.js";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +36,26 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/allprojects",
+    element: <AllProjects/>
+  },
+  {
+    path: "/websites",
+    element: <Websites/>
+  },
+  {
+    path: "/allprojects",
+    element: <AllProjects/>
+  },
+  {
+    path: "/mobileapp",
+    element: <MobileApp/>
+  },
+  {
+    path: "/designs",
+    element: <Designs/>
   },
 ]);
 
