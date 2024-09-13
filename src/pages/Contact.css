@@ -1,94 +1,166 @@
-*{
+/* Base styles (already provided) */
+
+* {
     margin: 0;
     overflow-x: hidden;
 }
-.contact{
+
+.contact {
     background-color: #000A1F;
     color: #ffffff;
 }
-.contact-content{
-   width: 100vw;
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.contact-content .contact-header{
-    width: 100%;
-    height: 20%;
+
+.contact-content {
+    width: 100vw;
+    height: auto;
+    /* Allow height to adjust based on content */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-} 
-.contact-content .contact-header h1{
-    font-size: 30px;
+    padding: 20px;
+    /* Added padding for spacing */
+}
+
+.contact-content .contact-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-content .contact-header h1 {
+    font-size: 2rem;
     overflow: hidden;
 }
-.contact-content .contact-header p{
-    font-size: 20px;
+
+.contact-content .contact-header p {
+    font-size: 1.25rem;
     overflow: hidden;
 }
-.contact-content .contact-form{
-    width: 50%;
-    height: 70%;
+
+.contact-content .contact-form {
+    width: 100%;
+    max-width: 600px;
+    /* Set a max-width for better layout on larger screens */
     background-color: #ffffff;
     color: #000000;
     border-radius: 7px;
+    padding: 20px;
 }
-.contact-content .contact-form form{
+
+.contact-content .contact-form form {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
-.contact-content .contact-form form .form-data{
-    width: 83%;
-    height: 17%;
-    display: flex;
-    justify-content: space-around;
-}
-.contact-content .contact-form form .form-data .form-data-input{
+
+.contact-content .contact-form form .form-data {
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Allow wrapping of form fields on smaller screens */
+    gap: 10px;
+    /* Added gap for spacing */
+    margin-bottom: 20px;
 }
-input, select{
-    width: 80%;
-    height: 60%;
+
+.contact-content .contact-form form .form-data .form-data-input {
+    width: 100%;
+    max-width: 400px;
+    /* Set a max-width for form fields */
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    /* Full width for better responsiveness */
     border-radius: 5px;
     border: 1px solid #000000;
+    box-sizing: border-box;
+    /* Include padding and border in the element’s total width and height */
 }
-.contact-button{
+
+textarea {
+    height: auto;
+    /* Allow height to adjust based on content */
+}
+
+.contact-button {
     background-color: #228B22;
     border: none;
     color: #ffffff;
-    width: 15vw;
-    height: 8vh;
+    width: 100%;
+    max-width: 200px;
+    /* Set a max-width for button */
+    height: 50px;
+    /* Adjusted height for better appearance */
     border-radius: 10px;
+    cursor: pointer;
+    /* Added cursor pointer for better UX */
 }
-.form-data-msg{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 120px;
+
+/* Responsive styles */
+
+@media (max-width: 1200px) {
+    .contact-content .contact-form {
+        width: 80%;
+    }
+
+    .contact-content .contact-form form .form-data .form-data-input {
+        max-width: 350px;
+    }
 }
-textarea{
-    width: 75%;
-    height: 17vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    border-radius: 5px;
-    border: 1px solid #000000;
+
+@media (max-width: 992px) {
+    .contact-content .contact-form {
+        width: 80%;
+    }
+
+    .contact-content .contact-form form .form-data {
+        flex-direction: column;
+        /* Stack form fields vertically on smaller screens */
+    }
+
+    .contact-content .contact-form form .form-data .form-data-input {
+        max-width: 100%;
+        /* Remove max-width constraint */
+    }
 }
-.form-data-btn {
-    width: 100%;
-    height: 17%;
-    margin-left: 120px;
+
+@media (max-width: 768px) {
+    .contact-content .contact-form {
+        padding: 15px;
+    }
+
+    .contact-content .contact-form form .form-data {
+        gap: 5px;
+        /* Reduce gap between form fields */
+    }
+
+    .contact-button {
+        width: 100%;
+        max-width: 150px;
+        /* Adjust button width for smaller screens */
+        height: 45px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-content .contact-form {
+        padding: 10px;
+    }
+
+    .contact-content .contact-form form .form-data {
+        gap: 10px;
+        /* Ensure sufficient spacing on very small screens */
+    }
+
+    .contact-button {
+        width: 100%;
+        max-width: 120px;
+        /* Further adjust button width */
+        height: 40px;
+    }
 }

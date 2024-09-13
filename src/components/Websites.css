@@ -1,0 +1,141 @@
+/* Base styles (already provided) */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.websites {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.websites .websites-container {
+    width: 80vw;
+    height: auto;
+    /* Allow height to adjust based on content */
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping of content */
+    gap: 20px;
+    /* Added gap for spacing between items */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+.websites .websites-container .website-project {
+    width: 100%;
+    /* Make width 100% for responsive layout */
+    max-width: 300px;
+    /* Set a max-width for individual project cards */
+    height: auto;
+    /* Allow height to adjust based on content */
+    overflow: hidden;
+    text-align: center;
+    /* Center-align text for better readability */
+}
+
+.websites .websites-container .website-project img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+button {
+    background-color: #228B22;
+    border: none;
+    color: #ffffff;
+    width: 15vw;
+    height: 8vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conclusion {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive styles */
+
+@media (max-width: 1200px) {
+    .websites .websites-container {
+        width: 90vw;
+    }
+
+    .websites .websites-container .website-project {
+        width: 45%;
+        /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .websites .websites-container {
+        width: 95vw;
+    }
+
+    .websites .websites-container .website-project {
+        width: 30%;
+        /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .websites .websites-container {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    .websites .websites-container .website-project {
+        width: 80%;
+        /* Adjust width for small screens */
+        max-width: none;
+        /* Remove max-width constraint */
+    }
+
+    button {
+        width: 100px;
+        /* Adjust button width for smaller screens */
+        height: 100px;
+    }
+
+    .conclusion {
+        height: auto;
+        /* Allow height to adjust based on content */
+    }
+}
+
+@media (max-width: 576px) {
+    .websites .websites-container .website-project {
+        width: 90%;
+        /* Adjust width for extra-small screens */
+    }
+
+    .websites .websites-container .website-project img {
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    button {
+        width: 50vw;
+        height: 5vh;
+    }
+
+    .conclusion {
+        height: auto;
+        /* Allow height to adjust based on content */
+        padding: 20px;
+        /* Added padding for spacing */
+    }
+}
