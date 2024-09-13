@@ -5,6 +5,7 @@ import feature1 from "../feature-1.png.png";
 import feature2 from "../feature-2.png.png";
 import feature3 from "../feature-3.png.png";
 import feature4 from "../feature-4.png.png";
+import Footer from "../components/Footer";
 
 
 function Home() {
@@ -24,9 +25,6 @@ function Home() {
         </div>
         <div className="solutions">
           <div className='solutions-container'>
-            <div className='solutions-image'>
-              <img src="https://images.pexels.com/photos/8472849/pexels-photo-8472849.jpeg" alt="solutions"/>
-            </div>
             <div className='solutions-content'>
               <h2>Explore Our Professional Business Solutions</h2>
               <div className='sltns'>
@@ -83,8 +81,12 @@ function Home() {
                 </div>
               </div>
             </div>
+            <div className='solutions-image'>
+              <img src="https://images.pexels.com/photos/8472849/pexels-photo-8472849.jpeg" alt="solutions"/>
+            </div>
           </div>
         </div>
+        <Footer/>
     </div>
   )
 }
