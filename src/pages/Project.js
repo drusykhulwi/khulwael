@@ -15,14 +15,14 @@ function Project() {
           <p> I help businesses build their online presence.</p>
         </div>
         <div className='project-contents' id="all-projects">
-          {/* <div className='project-header'>
+          <div className='project-header'>
             <div className='project-header-container'>
               <Link to="/project">All</Link>
-              <Link to="/project">Websites</Link>
+              {/* <Link to="/project">Websites</Link>
               <Link to="/project">Mobile Apps</Link>
-              <Link to="/project">Designs</Link>
+              <Link to="/project">Designs</Link> */}
             </div>
-          </div> */}
+          </div>
           <Websites/>
         </div>
         <div className="conclusion">
