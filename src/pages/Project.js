@@ -26,7 +26,7 @@ function Project() {
           <Websites/>
         </div>
         <div className="conclusion">
-          <h2>Let's build something grat together</h2>
+          <h2>Let's build something great together</h2>
           <p>
             Contact me to get started with your quality online presence. We'll figure it out at an affordable price.
           </p>

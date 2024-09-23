@@ -15,11 +15,7 @@ function About() {
           <h2>About Me</h2>
           <p>
             Hello! I am Drusilla Khulwael Wamalwa, a web developer, UI/UX Designer,
-            a Mobile developer in training and an upcoming software engineer. I am proficient 
-            in HTML, CSS, JS and ReactJs Framework.  I am doing my bachelors degree in Business Information 
-            Technology at St Paul's University. I am interested in Exploring and staying updated with the latest 
-            trends in Technology. I am passionate about creating products that make a difference, which drives me to
-            reach my full potential.
+            a Mobile developer in training and an upcoming software engineer.
           </p>
           <PdfFile/>
         </div>
