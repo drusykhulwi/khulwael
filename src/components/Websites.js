@@ -19,9 +19,9 @@ function Websites() {
         </div>
         <div className="website-project">
           <img src={Drukel} alt="weather app"/>
-          <h3>Shoees shop</h3>
+          <h3>Shoes shop</h3>
           <p>
-            This is a shoe shop website developed using php
+            This is a shoe shop website developed using php. The aim is  to provide an online platform for customers to browse, select, and purchase shoes conveniently. 
           </p>
           <a href="http://druel.great-site.net/" rel="noreferrer" target="_blank">View Project</a>
         </div>
